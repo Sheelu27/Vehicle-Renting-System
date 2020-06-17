@@ -4,6 +4,7 @@ var home = document.getElementById("option4")
 var login = document.getElementById("option2")
 
 
+
 function aboutit(){
     event.preventDefault()
     location.href = "about.html"
@@ -23,10 +24,16 @@ function homein(){
 function signin(){
     event.preventDefault()
     location.href = "login.html"
+    
 }
+
+
 
 about.addEventListener('click',aboutit)
 contact.addEventListener('click',contactit)
 home.addEventListener('click',homein)
 login.addEventListener('click',signin)
+
+
+
 
