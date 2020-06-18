@@ -4,6 +4,9 @@ var home = document.getElementById("option4")
 var login = document.getElementById("option2")
 
 
+var product = [["Royal Enfield Bullet",2000,"Insured:Yes","Color options: Forest Green","Fuel economy:30 to 40 km/l"],["Harley-Davidson",4000,"Insured:Yes","Color options: Forest Green","Fuel economy:30 to 40 km/l"],["Harley-Davidson",4000,"Insured:Yes","Color options: Forest Green","Fuel economy:30 to 40 km/l"]
+,["Harley-Davidson",6000,"Insured:Yes","Color options: Forest Green","Fuel economy:30 to 40 km/l"],["KTM",3000,"Insured:Yes","Color options: Forest Green","Fuel economy:30 to 40 km/l"],["Royal",2000,"Insured:Yes","Color options: Forest Green","Fuel economy:30 to 40 km/l"]]
+
 
 function aboutit(){
     event.preventDefault()
@@ -22,7 +25,11 @@ function homein(){
 }
 
 function signin(){
+    var motodata = JSON.stringify(product)
+    localStorage.setItem("motodata",motodata)
+
     event.preventDefault()
+    
     location.href = "login.html"
     
 }
